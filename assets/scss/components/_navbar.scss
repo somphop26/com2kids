@@ -1,13 +1,12 @@
 .site-branding {
   width: calc(100% - 24px);
-  padding: 20px 0;
 
   @include media-breakpoint-up(lg) {
     width: auto;
   }
 
   a {
-    margin-top: 6px;
+    text-decoration: none;
   }
 }
 
