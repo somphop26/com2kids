@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "deploy": "rimraf public && hugo --minify && gh-pages -d public",
-    "build": "rimraf public && hugo --minify"
+    "build": "rimraf public && hugo --minify",
+    "update": "git add -A && git commit -m 'update' && git push"
   },
   "author": "Paiboon Auengkongkatong",
   "license": "ISC",
