@@ -1,0 +1,40 @@
+.top-header-bar {
+  background: $primary;
+  color: $light;
+
+  .header-bar-email,
+  .header-bar-text {
+    padding: 20px 0;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  .header-bar-email a,
+  .header-bar-text span {
+    text-transform: lowercase;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .header-bar-text {
+    margin-left: 48px;
+  }
+
+  .header-bar-text p {
+    margin: 0;
+  }
+  .donate-btn a {
+    display: inline-block;
+    padding: 20px 40px;
+    font-weight: 500;
+    line-height: 1;
+    color: $light;
+    text-decoration: navajowhite;
+    background-color: $success;
+  }
+
+  .need-btn a {
+    color: $dark;
+    background-color: $warning;
+  }
+}

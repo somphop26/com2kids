@@ -13,7 +13,10 @@
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
   </head>
   <body>
-    {{ partial "navbar/site-navbar.html" . }}
+    <header>
+      {{ partial "header/site-top-header-bar.html" . }}
+      {{ partial "header/site-navbar.html" . }}
+    </header>
     <main role="main">
       {{ block "content" . }}
       {{ end }}
@@ -30,7 +33,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    {{ partial "navbar/script.html" }}
     {{ block "javascript" . }}
     {{ end }}
   </body>
