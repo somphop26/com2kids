@@ -7,8 +7,8 @@
         <div class="site-branding d-flex align-items-center">
           <a class="d-block" href="{{ `/` | relURL }}" rel="home">
             <div class="logo">
-              <p class="title">com2kids</p>
-              <p class="description">โครงการคอมพิวเตอร์มือสองเพื่อน้องในชนบท</p>
+              <p class="title">{{ .Site.Title }}</p>
+              <p class="description">{{ .Site.Params.description }}</p>
             </div>
           </a>
         </div>
