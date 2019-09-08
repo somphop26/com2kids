@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Kanit:300,400&subset=thai');
+@import url('https://fonts.googleapis.com/css?family=Kanit:200,300,400&subset=thai');
 @import 'variables';
 @import '../../node_modules/bootstrap/scss/bootstrap';
 @import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
@@ -10,3 +10,6 @@
 @import './components/top-header-bar';
 @import './components/navbar';
 @import './components/page-header';
+@import './components/welcome-content';
+
+@import './pages/about-us';

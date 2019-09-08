@@ -1,0 +1,25 @@
+.welcome-content {
+  .entry-title {
+    position: relative;
+    padding-bottom: 24px;
+    font-size: 36px;
+    font-weight: 600;
+    color: $light;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 64px;
+      height: 4px;
+      border-radius: 2px;
+      background: $primary;
+    }
+  }
+
+  .entry-content {
+    line-height: 2;
+    color: $gray-600;
+  }
+}
