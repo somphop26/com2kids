@@ -5,3 +5,11 @@
 .debug {
   @include debug;
 }
+
+.map {
+  height: 40rem;
+
+  @include media-breakpoint-down(sm) {
+    height: 30rem;
+  }
+}
