@@ -1,0 +1,56 @@
+{{ define "content" }}
+<div class="jumbotron jumbotron-1">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <h1 class="display-4">{{ .Site.Params.description }}</h1>
+        <p class="lead py-4">
+          ขอเชิญร่วมบริจาคคอมพิวเตอร์ และอุปกรณ์ไอที เพื่อส่งต่อให้น้องๆ ในชนบท
+          สานฝันการศึกษา ในโรงเรียนที่ขาดแคลน
+        </p>
+        <p class="lead">
+          <a
+            class="btn btn-success btn-lg px-5 mt-4"
+            href="{{ `/get-involved` | relURL }}"
+            role="button"
+          >
+            ต้องการบริจาค
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="jumbotron-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img
+          src="{{ `images/main/give.jpg` | relURL }}"
+          alt="our ceo"
+          class="img-fluid"
+        />
+      </div>
+      <div class="col-md-6 pl-lg-5">
+        <h2 class="display-5 mt-lg-5 mt-md-0 mt-5">
+          พวกเราไม่เพียงแค่บริจาคคอมพิวเตอร์
+        </h2>
+        <p class="my-lg-4 my-md-0 my-4">
+          เราติดตั้งซอฟต์แวร์ถูกลิขสิทธิ์ที่เหมาะสำหรับใช้ในการเรียนการสอน
+          และเข้าไปติดตั้งระบบเน็ตเวิร์คเพื่อให้สามารถเข้าถึงอินเตอร์เน็ตถึงที่โรงเรียน
+          พร้อมทั้งให้ความรู้กับบุคลากรของโรงเรียนในการใช้ซอฟต์แวร์ต่าง ๆ
+          และการดูแลแก้ไขปัญหาของคอมพิวเตอร์ในเบื้องต้น
+        </p>
+        <a
+          class="btn btn-primary btn-lg px-5 mt-4"
+          target="_blank"
+          href="{{ .Site.Params.contact.facebook }}/photos/?tab=albums"
+          role="button"
+        >
+          ดูภาพกิจกรรมที่ผ่านมา
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

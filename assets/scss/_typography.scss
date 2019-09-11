@@ -2,3 +2,12 @@ body {
   font-size: 18px;
   font-weight: 300;
 }
+
+.markdown {
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: $primary;
+  }
+}
