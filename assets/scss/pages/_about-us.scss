@@ -1,21 +1,5 @@
 .about-us {
-  .welcome-wrap {
+  .container {
     padding-top: 96px;
-    img {
-      display: block;
-      width: 100%;
-    }
-  }
-
-  .welcome-content {
-    .entry-title {
-      color: $dark;
-    }
-
-    .entry-content {
-      @include media-breakpoint-up(lg) {
-        margin-top: 60px;
-      }
-    }
   }
 }
