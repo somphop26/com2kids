@@ -5,5 +5,5 @@ draft: false
 type: request-for-donation
 menu:
   main:
-    weight: 40
+    weight: 50
 ---

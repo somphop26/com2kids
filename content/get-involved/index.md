@@ -5,5 +5,5 @@ draft: false
 type: get-involved
 menu:
   main:
-    weight: 30
+    weight: 40
 ---

@@ -5,7 +5,7 @@ draft: false
 type: contact-us
 menu:
   main:
-    weight: 50
+    weight: 70
 ---
 
 ## คำแนะนำในการเดินทาง
