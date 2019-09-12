@@ -1,19 +1,20 @@
 {{ define "content" }}
 <div class="about-us">
   {{ partial "page-header" . }}
-  <div class="container">
+  <div class="container entry-wrap">
     <div class="row">
       <div class="col-12">
-          <h2 class="entry-title">ยินดีต้อนรับสู่โครงการของเรา</h2>
-          <img
-            src="{{ `images/about-us.jpg` | relURL }}"
-            class="img-fluid w-100 mt-5"
-            alt="about us"
-          />
-          <div class="entry-content mt-4">
-            {{ .Content }}
-          </div>
-        </div>
+        <h2 class="entry-title">ยินดีต้อนรับสู่โครงการของเรา</h2>
+      </div>
+      <div class="col-md-8 offset-md-2">
+        <img
+          src="{{ `images/about-us.jpg` | relURL }}"
+          class="img-fluid w-100 mt-5"
+          alt="about us"
+        />
+      </div>
+      <div class="col-md-8 offset-md-2 entry-content mt-4">
+        {{ .Content }}
       </div>
     </div>
   </div>

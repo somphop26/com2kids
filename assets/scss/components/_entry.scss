@@ -1,9 +1,20 @@
+.entry-wrap {
+  padding-top: 5rem;
+  @include media-breakpoint-down(md) {
+    padding-top: 3rem;
+  }
+}
+
 .entry-title {
   position: relative;
   padding-bottom: 24px;
   font-size: 2.5rem;
   font-weight: 400;
   color: $dark;
+
+  @include media-breakpoint-down(md) {
+    font-size: 2rem;
+  }
 
   &::before {
     content: '';
