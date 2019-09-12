@@ -1,6 +1,13 @@
 <script>
-  $('.hamburger-menu').on('click', function() {
-    $(this).toggleClass('open')
-    $('.site-navigation').toggleClass('show')
+  var hamburger = $('.hamburger-menu')
+  var siteNavigation = $('.site-navigation')
+  hamburger.on('click', function() {
+    hamburger.toggleClass('open')
+    siteNavigation.toggleClass('show')
+  })
+
+  $('main, footer').on('click', function() {
+    hamburger.removeClass('open')
+    siteNavigation.removeClass('show')
   })
 </script>
