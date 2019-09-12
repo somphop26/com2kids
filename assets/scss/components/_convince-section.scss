@@ -1,5 +1,30 @@
 .convince-section {
   margin: 5rem 0;
+  .get-involved,
+  .request-for-donation {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5rem 3rem;
+    @include media-breakpoint-down(lg) {
+      padding: 2rem 3rem;
+    }
+
+    p {
+      line-height: 2rem;
+    }
+
+    h3 {
+      margin: 0;
+    }
+
+    .btn {
+      align-self: center;
+      width: 12rem;
+    }
+  }
+
   .get-involved {
     background-color: $success;
     color: $light;

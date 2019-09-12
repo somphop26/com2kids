@@ -1,22 +1,18 @@
 {{ define "content" }}
-<div class="request-for-donation">
+<div class="request-form">
   {{ partial "page-header" . }}
   <div class="container entry-wrap">
     <div class="row">
       <div class="col-12">
-        <h2 class="entry-title">วิธีขอรับบริจาค</h2>
-        <div class="col-md-8 offset-md-2">
-          <img
-            src="{{ `images/request-for-donation.jpg` | relURL }}"
-            class="img-fluid w-100 mt-5"
-            alt="about us"
-          />
-        </div>
-        <div class="col-md-8 offset-md-2 entry-content mt-4">
-          {{ .Content }}
-        </div>
+        <h2 class="entry-title">แบบฟอร์มการขอรับบริจาค</h2>
+        <div id="form" class="col-md-8 offset-md-2"></div>
         <div class="text-center mt-4">
-          <a href="#" class="btn btn-primary px-4">ฉันอ่านแล้ว</a>
+          <a
+            href="{{ `request-for-donation/request-form` | relURL }}"
+            class="btn btn-primary px-4"
+          >
+            บันทึก
+          </a>
         </div>
       </div>
     </div>
