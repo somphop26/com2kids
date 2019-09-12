@@ -30,6 +30,10 @@
     color: $light;
     text-decoration: navajowhite;
     background-color: $success;
+    @include media-breakpoint-down(sm) {
+      font-size: 1rem;
+      padding: 20px 15px;
+    }
   }
 
   .need-btn a {
