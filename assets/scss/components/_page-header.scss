@@ -5,6 +5,10 @@
   padding-bottom: 90px;
   background: url(/com2kids/images/banner.png) no-repeat center;
   background-size: cover !important;
+  @include media-breakpoint-down(sm) {
+    padding-top: 60px;
+    padding-bottom: 45px;
+  }
 
   &::after {
     content: '';
