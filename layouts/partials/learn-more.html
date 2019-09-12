@@ -1,0 +1,14 @@
+<div class="learn-more">
+  <div class="container p-4">
+    <h3 class="display-4">
+      {{ .title }}
+    </h3>
+    <a
+      class="btn btn-success btn-lg px-5 mt-3"
+      href="{{ .btnURL | relURL }}"
+      role="button"
+    >
+      {{ .btnText }}
+    </a>
+  </div>
+</div>

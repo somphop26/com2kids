@@ -1,0 +1,14 @@
+.learn-more {
+  background-color: $primary;
+  padding: 5rem 0;
+  margin: 5rem 0;
+  text-align: center;
+
+  .container {
+    max-width: 45rem;
+
+    h3 {
+      color: $white;
+    }
+  }
+}
