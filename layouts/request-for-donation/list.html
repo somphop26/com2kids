@@ -18,7 +18,7 @@
         <div class="text-center mt-4">
           <a
             href="{{ `request-for-donation/request-form/#form` | relURL }}"
-            class="btn btn-primary px-4"
+            class="btn btn-danger px-4"
           >
             ฉันอ่านแล้ว
           </a>
@@ -26,5 +26,6 @@
       </div>
     </div>
   </div>
+  {{ partial "learn-more" (dict "title" "หากคุณมีข้อสงสัยกรุณาติดต่อเรา" "btnText" "ติดต่อเรา" "btnURL" "contact-us/#form") }}
 </div>
 {{ end }}

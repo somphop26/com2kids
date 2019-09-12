@@ -1,5 +1,17 @@
 {{ define "content" }}
 <div class="problem">
   {{ partial "page-header" . }}
+  <div class="container entry-wrap">
+    <h2 class="entry-title mb-4">สภาพปัญหาในปัจจุบัน</h2>
+    <div class="row">
+      {{ range.Params.problems }}
+      <div class="col-lg-4 col-md-6 p-4">
+        <h3 class="mb-3 text-danger display-4">{{ .title }}</h3>
+        <p>{{ .desc }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+  {{ partial "learn-more" (dict "title" "โครงการของเราสามารถแก้ไขปัญหาได้อย่างไร" "btnText" "การแก้ไขปัญหา" "btnURL" "solution") }}
 </div>
 {{ end }}
